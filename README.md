@@ -14,7 +14,7 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
 </div>
 
-## Ссылка на <a href="https://github.com/PavelZavritskiy/mesto-project-ff" target="_blank">репозиторий</a> <br> Ссылка на опубликованный <a href="https://pavelzavritskiy.github.io/mesto-project-ff//" target="_blank">сайт</a>
+## Ссылка на <a href="https://github.com/PavelZavritskiy/mesto-project-ff" target="_blank">репозиторий</a> <br>
 
 # Автор: Заврицкий Павел
 

@@ -14,20 +14,17 @@ function closePopup (obj) {
 
 //Закрытие Popups нажатием на оверлей
 function handleOverlayClick (evt) {
-  evt.stopPropagation();
-
   const evtTarget = evt.target;
   if (evt.target.classList.contains('popup_is-opened')) {
-    closePopup(evtTarget.closest('.popup'));
+    closePopup(evtTarget);
   };
 };
 
 //Закрытие по Esc
 function handleEsc (evt) {
   evt.stopPropagation();
-
-  const openPopup = document.querySelector('.popup_is-opened');
   if (evt.code === "Escape") {
+    const openPopup = document.querySelector('.popup_is-opened');
     closePopup (openPopup);
   };
 };

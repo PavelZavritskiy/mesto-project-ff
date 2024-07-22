@@ -1,8 +1,7 @@
 import './pages/index.css';
-import { openPopup, closePopup, } from './components/modal'
-import { createCard, deleteCard, likeCard, initialCards } from './components/cards'
-
-//Насчёт того что я залил весь проект заново, он не пушился почему-то. Я заново его склонировал и запихнул файлы из той папке где уже код был весь написан. Писало что у меня нет каких-то файлов, я делал git pull, но не помогало.
+import { openPopup, closePopup, } from './components/modal';
+import { createCard, deleteCard, likeCard } from './components/card';
+import { initialCards } from './components/cards';
 
 
 //Контейнер для карточек
@@ -42,29 +41,29 @@ const jobData = profileData.querySelector('.profile__description');
 //Добавление анимации открытию и закрытию Popups
 const allPopup = document.querySelectorAll('.popup');
 allPopup.forEach((popup) => {
-    popup.classList.add('popup_is-animated');
+  popup.classList.add('popup_is-animated');
 });
 
+
 //Наполнение карточки данными
-function getData() {
+function renderInitialCards() {
   const data =  initialCards.forEach(function(el) {
     const name = el.name;
     const link = el.link;
-  cardContainer.append(createCard(name, link, deleteCard, likeCard, openPopupCard));
+    cardContainer.append(createCard(name, link, deleteCard, likeCard, openPopupCard));
   });
 };
 
 
 //Открытие Popup карточки
 function openPopupCard(evt) {
-  evt.stopPropagation();
   if (evt.target.classList.contains('card__image')) {
     cardPopupCaption.textContent = evt.target.alt;
     cardPopupImage.alt = evt.target.alt;
     cardPopupImage.src = evt.target.currentSrc;
     openPopup(cardPopup);
   };
-};
+}; //На прошлом ревью я забыл удалить папку скрипт. А тот код, остался промежуточный, изначально почему то без функции открывал этот попап, потом подумал переделал открытие функцией, код перенёсЮ а папку забыл удалить
 
 
 //Открытие Popup редактирования профиля
@@ -76,20 +75,18 @@ profileEditorBtn.addEventListener('click', function(evt) {
 });
 
 //Функция редактирования профиля
-function handleFormSubmit(evt) {
+function handleFormSubmitProfileEditor(evt) {
   evt.preventDefault(); 
 
   nameData.textContent = nameInput.value;
   jobData.textContent = jobInput.value;
 
   const evtTarget = evt.target;
-  if (evtTarget === formEditorProfile) {
-    closePopup(evtTarget.closest('.popup'));
-  }
+  closePopup(evtTarget.closest('.popup'));
 };
 
 //Слушатель редактирования профиля
-formEditorProfile.addEventListener('submit', handleFormSubmit); 
+formEditorProfile.addEventListener('submit', handleFormSubmitProfileEditor); 
 
 
 //Открытие Popup добавления новой карточки
@@ -106,9 +103,7 @@ function handleFormAddCard(evt) {
   
   formAddCard.reset();
   const evtTarget = evt.target;
-  if (evtTarget === formAddCard) {
-    closePopup(evtTarget.closest('.popup'));
-  };
+  closePopup(evtTarget.closest('.popup'));
 };
 
 //Слушатель добавления новой карточки
@@ -123,4 +118,4 @@ closeBtns.forEach((btn) => {
     closePopup(closestPopup);
 })});
 
-getData();
+renderInitialCards();

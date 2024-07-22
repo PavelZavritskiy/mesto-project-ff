@@ -2,6 +2,8 @@ import './pages/index.css';
 import { openPopup, closePopup, } from './components/modal'
 import { createCard, deleteCard, likeCard, initialCards } from './components/cards'
 
+//Насчёт того что я залил весь проект заново, он не пушился почему-то. Я заново его склонировал и запихнул файлы из той папке где уже код был весь написан. Писало что у меня нет каких-то файлов, я делал git pull, но не помогало.
+
 
 //Контейнер для карточек
 const cardContainer = document.querySelector('.places__list');

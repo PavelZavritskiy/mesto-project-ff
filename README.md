@@ -5,7 +5,7 @@
 </div>
 
 
-## В этом проекте мы применяем знания, полученные в пятом спринте. Основной акцент сделан на работу с элементами DOM: мы их находим, создаём и заполняем данными. Кроме того, в рамках проекта мы практикуемся в работе с массивами.
+## Проект основан на использовании знаний, полученных при изучении JavaScript. В частности, мы работали с DOM-элементами и массивами, а также реализовали работу модальных окон с помощью JavaScript.
 ### :hammer_and_wrench: **Используемые инструменты :**
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
@@ -14,7 +14,7 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
 </div>
 
-## Ссылка на <a href="https://github.com/PavelZavritskiy/mesto-project-ff" target="_blank">репозиторий</a> <br> Ссылка на опубликованный <a href="https://pavelzavritskiy.github.io/mesto-project-ff//" target="_blank">сайт</a>
+## Ссылка на <a href="https://github.com/PavelZavritskiy/mesto-project-ff" target="_blank">репозиторий</a>
 
 # Автор: Заврицкий Павел
 

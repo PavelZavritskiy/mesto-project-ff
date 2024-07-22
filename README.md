@@ -1,4 +1,4 @@
-# **"*MESTO*"**, первая работа, связанная с непосредственным написанием JS-кода.
+# **"*MESTO*"**,  работа, связанная с непосредственным написанием JS-кода.
 
 <div id="header" align="center">
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExanBoMTU1MXl4cjFjeTVuYTJzN29lcThtemg3ZGN0aXNuZjh1Y3N5bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" width="100%"/>

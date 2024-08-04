@@ -5,7 +5,7 @@
 </div>
 
 
-## Проект основан на использовании знаний, полученных при изучении JavaScript. В частности, мы работали с DOM-элементами и массивами, а также реализовали работу модальных окон с помощью JavaScript.
+## Проект основан на знаниях, полученных при изучении JavaScript. Мы работали с DOM-элементами и массивами, а также научились создавать модальные окна с помощью JavaScript. Кроме того, мы практиковались в работе с API: получали данные от сервера, удаляли и редактировали их. 
 ### :hammer_and_wrench: **Используемые инструменты :**
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
@@ -15,6 +15,7 @@
 </div>
 
 ## Ссылка на <a href="https://github.com/PavelZavritskiy/mesto-project-ff" target="_blank">репозиторий</a>
+## Ссылка на <a href="https://pavelzavritskiy.github.io/mesto-project-ff/" target="_blank">сайт</a>
 
 # Автор: Заврицкий Павел
 
